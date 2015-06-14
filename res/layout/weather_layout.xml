@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00bfff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#fa7644" >
+
+        <TextView
+            android:id="@+id/title_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="天气"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+        
+        <Button 
+            android:id="@+id/refresh_btn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/img"/>
+        
+        <Button
+            android:id="@+id/switch_city_btn" 
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/img1"/>
+        
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/show_weather"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="发布时间：00:00"
+        android:textColor="#fff"
+        android:visibility="gone" />
+
+    <RelativeLayout 
+        android:id="@+id/progress_bar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone">
+        
+        <ProgressBar 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_centerInParent="true"/>
+        
+    </RelativeLayout>
+    
+
+    <RelativeLayout
+        android:id="@+id/show_weather_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            android:background="@drawable/btn_green"
+            android:visibility="gone"
+            android:id="@+id/testButton"/>
+        <TextView
+        android:id="@+id/public_time_weather"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="发布时间：00:00"
+        android:textColor="#fff"
+        android:textSize="17sp" />
+        
+        <TextView
+            android:id="@+id/weather_info_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="小雨转中雨"
+            
+            android:textColor="#fff"
+            android:textSize="38sp" />
+
+        <TextView
+            android:id="@+id/current_time_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/weather_info_weather"
+            android:layout_marginBottom="10dp"
+            android:text="2015年6月11"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/weather_info_weather"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/temp_low_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="-5"
+                android:textColor="#fff"
+                android:textSize="38sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="~"
+                android:textColor="#fff"
+                android:textSize="38sp" />
+
+            <TextView
+                android:id="@+id/temp_high_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="15"
+                android:textColor="#fff"
+                android:textSize="38sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
